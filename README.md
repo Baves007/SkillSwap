@@ -72,51 +72,6 @@ This helps users find meaningful skill-swap opportunities.
 
 ---
 
-##  Project Structure
-
-SkillSwap/
-│
-├── client/
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── Navbar.tsx
-│   │   │
-│   │   ├── pages/
-│   │   │   ├── Home.tsx
-│   │   │   ├── Login.tsx
-│   │   │   ├── Register.tsx
-│   │   │   ├── Dashboard.tsx
-│   │   │   ├── Discover.tsx
-│   │   │   ├── Requests.tsx
-│   │   │   ├── Profile.tsx
-│   │   │   ├── Matches.tsx
-│   │   │   ├── ForgotPassword.tsx
-│   │   │   └── ResetPassword.tsx
-│   │   │
-│   │   ├── App.tsx
-│   │   └── main.tsx
-│   │
-│   └── package.json
-│
-├── server/
-│   ├── src/
-│   │   ├── models/
-│   │   │   ├── user.js
-│   │   │   └── SwapRequest.js
-│   │   │
-│   │   ├── routes/
-│   │   │   ├── authRoutes.js
-│   │   │   └── swapRoutes.js
-│   │   │
-│   │   └── server.js
-│   │
-│   └── package.json
-│
-├── .gitignore
-└── README.md
-
----
-
 ##  Setup & Installation
 
 ### Prerequisites
