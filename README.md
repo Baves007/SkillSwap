@@ -110,9 +110,8 @@ Start the backend server using:
 
 npm run dev
 
-The backend server runs on:
+The backend server runs on particular localhost.
 
-http://localhost:5000
 
 ## 4. Install Frontend Dependencies
 
@@ -127,9 +126,7 @@ Start the React development server:
 
 npm run dev
 
-Vite will display a local URL in the terminal. Open that URL in your browser, usually:
-
-http://localhost:5173
+Vite will display a local URL in the terminal. Open that URL in your browser. Usually something like https://localhost:5***/
 
 
 ▶ HOW TO USE :
