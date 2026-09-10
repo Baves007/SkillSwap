@@ -153,19 +153,19 @@ http://localhost:5173
 
 
 ### Dashboard
-![Dashboard](docs/screenshots/dashboard.png)
+![Dashboard](dashboard.png)
 
 ### Discover
-![Discover](docs/screenshots/discover.png)
+![Discover](discover.png)
 
 ### Profile
-![Profile](docs/screenshots/profile.png)
+![Profile](profile.png)
 
 ### Register
-![Register](docs/screenshots/register.png)
+![Register](register.png)
 
 ### Login
-![Login](docs/screenshots/login.png)
+![Login](login.png)
 
 
 ## 🎥Demo Video
