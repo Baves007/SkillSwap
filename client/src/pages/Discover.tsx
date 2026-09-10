@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
+const API_URL = import.meta.env.VITE_API_URL;
 
 interface User {
   _id: string;
@@ -46,7 +47,7 @@ function Discover() {
     const fetchUsers = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/auth/users"
+          `${API_URL}/api/auth/users`
         );
 
         const data = await response.json();
@@ -98,7 +99,7 @@ function Discover() {
       setRequestStatus("");
 
       const response = await fetch(
-        "http://localhost:5000/api/swap/request",
+        `${API_URL}/api/swap/request`,
         {
           method: "POST",
 

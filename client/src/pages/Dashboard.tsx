@@ -52,7 +52,7 @@ function Dashboard() {
     const fetchStats = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/swap/stats/${user.id}`
+          `${import.meta.env.VITE_API_URL}/api/swap/stats/${user.id}`
         );
 
         const data = await response.json();

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL;
 
 interface Sender {
   _id: string;
@@ -47,7 +48,7 @@ function Requests() {
       setError("");
 
       const response = await fetch(
-        `http://localhost:5000/api/swap/incoming/${currentUser.id}`
+        `${API_URL}/api/swap/incoming/${currentUser.id}`
       );
 
       const data = await response.json();
@@ -98,7 +99,7 @@ function Requests() {
       setStatusMessage("");
 
       const response = await fetch(
-        `http://localhost:5000/api/swap/${requestId}/status`,
+        `${API_URL}/api/swap/${requestId}/status`,
         {
           method: "PUT",
 

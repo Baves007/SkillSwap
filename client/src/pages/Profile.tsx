@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL;
 
 interface User {
   id: string;
@@ -56,7 +57,7 @@ function Profile() {
       setError("");
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/user/${currentUser.id}`
+        `${API_URL}/api/auth/user/${currentUser.id}`
       );
 
       const data = await response.json();
@@ -118,7 +119,7 @@ function Profile() {
       setError("");
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/user/${currentUser.id}`,
+        `${API_URL}/api/auth/user/${currentUser.id}`,
         {
           method: "PUT",
 
